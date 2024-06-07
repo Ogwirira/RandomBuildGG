@@ -1,0 +1,576 @@
+@font-face {
+    font-family: Beaufort-heavy;
+    src: url("../police_d'écriture/BeaufortforLOL-Heavy.otf");
+}
+@font-face {
+    font-family: Beaufort-regular;
+    src: url("../police_d'écriture/BeaufortforLOL-Regular.otf");
+}
+
+/*------------------------------------------------------------------------pages----------------------------------------------------------------------------*/
+body {
+    background-color: #333232;
+    font-family: Beaufort-regular;
+    margin: 0;
+    font-weight: 400;
+}
+
+.navbar_acceuil {
+    background-color: #4F4E4E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    list-style-type: none;
+    padding: 0px;
+    margin-top: 0;
+
+}
+.title {
+    font-size: 50px;
+    color:#BB8545 ;
+    text-align: center;
+    font-family: Beaufort-heavy;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+.title a{
+    color:  #BB8545;
+    text-decoration: none;
+}
+.liens a {
+    color:  white;
+    text-decoration: none;
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+}
+.images {
+    height: 148px;
+}
+
+.bouton {
+    border-radius: 13px;
+    background: #BB8545;
+    box-shadow:  -5px -5px 23px #aa793f,
+                 5px 5px 23px #cc914b;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 25px;
+    padding: 4%;
+    width: 500px;
+    border: 200px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.boutons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 130px;
+    gap: 620px;
+}
+
+.regles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.titre_regle{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.boutons_2{
+    display: flex;
+    gap: 50px;
+    font-size: 30px;
+}
+.icon_perso{
+    border: 4px solid grey;
+    border-radius: 10%;
+    height: 148px;
+}
+.nom_perso{
+    color: white;
+    font-size: 30px;
+}
+.marg{
+    margin-top: 10%;
+}
+.section_acceuil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 380px;
+}
+.runes{
+    height: 500px;
+    width: 400px;
+    background-color: #4F4E4E;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+}
+.sousrunes_1 img, .sousrunes_2 img{
+    border-radius: 50%;
+    border: 2px solid #9CA6F7;
+    width: 50px;
+}
+.sousrunes_1,.sousrunes_2,.sousrunes_3{
+    display: flex;
+    flex-direction: column;
+}
+.runes2{
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.arbrerunes{
+    width: 100px;
+}
+.runes_contenair2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.runes_contenair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    margin-bottom: 20%;
+}
+.runes_contenair aside{
+    display: flex;
+}
+#arbre_runes{
+    width: 148px;
+    display: flex ;
+}
+#form_forgot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.runes_primaire img,.runes_secondaire img{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border:2px solid #333232;
+    border-radius: 50%;
+}
+.runes_tertiaire img{
+    display: flex;
+    flex-direction: column;
+}
+
+.items {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    height: 112px;
+    background-color: gray;
+    gap: 5px;
+    border: 4px solid grey;
+    border-radius: 10px;
+}
+.item_img{
+    width: 108px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.perso_contenair{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.contenair{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 30px;
+}
+.navbar_footer{ 
+    background-color: #4F4E4E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 249px;
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+.liens_footer {
+    display: flex;
+    gap: 430px;
+    margin-bottom: 0px;
+}
+a:active{
+    opacity: 60%;
+}
+.icon_role{
+    width: auto;
+    height: 30px;
+}
+.soustitre{
+    text-align: center;
+    color: #D9D9D9;
+    font-size: 40px;
+}
+.soustitre1{
+    text-align: center;
+    color: #D9D9D9;
+    font-size: 40px;
+}
+.input{
+    border-radius: 20px;
+    width: 400px;
+    height: 75px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+}
+.label{
+    color: white;
+    font-size: 30px;
+
+}
+.formulaire{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 42px;
+   
+  
+}
+.form_log{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 60px; 
+    margin-top: 62px;
+}
+.none1{
+    color: #4F4E4E !important;
+    cursor: default!important;
+}
+.liens_log{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.valider{
+    width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    background: #BB8545;
+    box-shadow:  -5px -5px 23px #aa793f,
+                 5px 5px 23px #cc914b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+    height: 200px;
+}
+.conditions{
+        width: 60%;
+    color: white;
+    margin-bottom: 10%;
+}
+.para {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contenair_share{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.test{
+    background-color: #4F4E4E;
+    width: 70%;
+
+    border-radius: 20px;
+}
+.Button_share{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+    gap: 200px;
+}
+.Button_share select{
+    width: 200px;
+    height: 70px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 2px solid black;
+}
+.contenair_perso{
+    display: flex;
+    flex-direction: row;
+}
+
+.header_forum{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pseudo{
+    color: white;
+    font-size: 20px;
+    display: block;
+    gap: 20px;
+}
+.contenair_share_2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.share_icon{
+    color: white;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    width: 30px;
+}
+.validation{
+    margin-top: 250px;
+    color: white;
+
+}
+.main_validation a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.main_validation{
+    text-align: center;
+    margin-bottom: 250px;
+    color: white;
+    font-size: 40px;
+}
+@media screen and (max-width:1600px) and (min-width:1200px) {
+    .liens_footer{
+        gap: 200px;
+    }
+    
+}
+@media screen and (max-width:1200px) and (min-width:400px) {
+    .liens_footer{
+        gap: 100px;
+    }
+
+ 
+}
+@media screen and (max-width:1000px)and (min-width:200px)  {
+    .footer{
+        right: 0;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+
+@media screen and (max-width:1440px) and (min-width:700px) {
+    .liens a{
+        font-size: 30px;
+    }
+    .header_acceuil{
+        width: 100%;
+    }
+    .section_acceuil{
+        justify-content: center;
+    }
+    .bouton{
+        width: 270px;       
+    }
+    .boutons{    
+        gap: 400px;
+        height: 180px;
+    }
+    .boutons_2{
+        width: 330px;
+        gap: 10px;
+        margin-bottom: 200px;
+    }
+    .items{
+        height: 62px;
+
+    }
+    .item_img{
+        width:  58px;
+        
+    }
+    .icon_perso{
+        width: 74px;
+        height: 74px;
+    }
+    .nom_perso{
+        font-size: 25px;
+    }
+    .perso_contenair{
+        gap: 30px;
+    }
+    .section_acceuil{
+        gap: 30px;
+    }
+    .runes{
+        width: 300px;
+        height: 400px;
+    }
+    #arbre_runes{
+        width: 120px;
+        height: 120px;
+    }
+    .runes_primaire img,.runes_secondaire img{
+        width: 60px;
+        height: 60px;
+    }
+    .runes_contenair{
+        width: 50%;
+    }
+    
+    .navbar_footer ,.navbar_acceuil{
+        gap: 0px;
+    }
+    .liens_log{
+        font-size: 30px;
+    }
+    .formulaire{
+        display: flex;
+
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .section {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .soustitre{
+        margin-top: 200px;
+    }
+    .lable{
+        font-size: 40px;
+    }
+    .box{
+        width: 70%;height: 70%;
+      }
+    .modal{
+        width: 70%;
+        margin: 30% auto;
+    }
+    .modal h2{
+        margin: 0;
+    }
+    .bouton{
+        font-size: 50px;
+    }
+    .valider{
+        font-size: 40px;
+    }
+    .nom_perso{
+        font-size: 30px;
+    }
+    .submit input {
+        margin-bottom: 200px;
+    }
+   
+}
+
+/* modal */
+#overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+/* .overlay:target {
+  visibility: visible;
+  opacity: 1;
+} */
+.modal {
+  margin: 18% auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4F4E4E;
+  color: white;
+  overflow: auto;
+  border: 3px solid #B5B5B5;
+}
+.modal #close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+.modal #close:hover {
+  color: #B5B5B5;
+}
+.modal form {
+    display: flex;
+    justify-content: center;
+  }
+.modal .email{
+    width: 70%;
+    height: 40px;
+}
